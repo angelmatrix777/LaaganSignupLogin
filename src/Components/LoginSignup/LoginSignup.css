@@ -1,0 +1,220 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/water.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85; 
+  z-index: -1; 
+}
+
+.login-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  z-index: -1; 
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  width: 10vw; 
+  max-width: 135px;
+  min-width: 80px; 
+  z-index: 10; 
+}
+
+.logo img {
+  width: 100%;
+  height: auto; 
+}
+
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  max-width: 90%;
+}
+
+.welcome {
+  font-size: 30px;
+  color: #000;
+  font-weight:lighter;
+  margin-bottom: 20px; 
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.subtitle {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 350;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 5px;
+  font-weight: 350; 
+}
+
+
+.input {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.input img {
+  margin-right: 10px;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.input input::placeholder {
+  color: #ABABAB;
+}
+
+.submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #DF6951;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.login-link span {
+  color: #DF6951;
+  cursor: pointer;
+}
+
+.remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+  accent-color: #DF6951; 
+}
+
+.remember-me label {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+.forgot-password span {
+  color: rgb(83, 83, 83);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forgot-password span:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.slide-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.slide-out {
+  animation: fadeOut 0.5s ease forwards;
+}
