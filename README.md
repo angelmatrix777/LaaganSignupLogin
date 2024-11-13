@@ -8,8 +8,7 @@ To start the website component:
 
 All files edited are in the component folder of src, with assets holding the images and LoginSignup holding .jsx and .css files.
 
-
-/*********************************************/
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
