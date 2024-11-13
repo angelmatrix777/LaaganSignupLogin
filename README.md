@@ -1,3 +1,15 @@
+The code implements a LoginSignup component through React, which allows for the toggling between a Login and a Sign Up form. It utilizes the useState hook to manage the state of the action variable, determining which one the user is viewing (Login or Sign up)
+
+To start the website component:
+
+1. open terminal in code editor
+2. type cd .\login-signup\
+3. type npm start
+
+All files edited are in the component folder of src, with assets holding the images and LoginSignup holding .jsx and .css files.
+
+
+/*********************************************/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
